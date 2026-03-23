@@ -1,0 +1,408 @@
+<!-- CURSOR -->
+<div class="cursor"       id="ss_cur"></div>
+<div class="cursor-trail" id="ss_trail"></div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav [class.scrolled]="isScrolled">
+  <a href="#hero" class="nav-logo">SS.</a>
+  <ul class="nav-links">
+    <li><a href="#about"           [class.active]="activeSection==='about'"          >About</a></li>
+    <li><a href="#skills"          [class.active]="activeSection==='skills'"         >Skills</a></li>
+    <li><a href="#experience"      [class.active]="activeSection==='experience'"     >Experience</a></li>
+    <li><a href="#accomplishments" [class.active]="activeSection==='accomplishments'">Projects</a></li>
+    <li><a href="#education"       [class.active]="activeSection==='education'"      >Education</a></li>
+    <li><a href="#contact"         [class.active]="activeSection==='contact'"        >Contact</a></li>
+  </ul>
+  <button class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" [class.open]="menuOpen">
+  <ul>
+    <li><a href="#about"           (click)="closeMenu()">About</a></li>
+    <li><a href="#skills"          (click)="closeMenu()">Skills</a></li>
+    <li><a href="#experience"      (click)="closeMenu()">Experience</a></li>
+    <li><a href="#accomplishments" (click)="closeMenu()">Projects</a></li>
+    <li><a href="#education"       (click)="closeMenu()">Education</a></li>
+    <li><a href="#contact"         (click)="closeMenu()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+  <div class="vline"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <p class="hero-tag a1"><span class="tline"></span>Civil Engineer &nbsp;·&nbsp; Portfolio</p>
+      <h1 class="hero-name a2">S.<br><span class="accent">Soundhar</span></h1>
+      <p class="hero-sub a3">Site Engineer &amp; Project Coordinator</p>
+      <p class="hero-desc a4">
+        Dedicated Civil Engineer with <b>7+ years</b> of experience designing, planning,
+        and overseeing construction projects across residential, commercial, and
+        government infrastructure worth ₹4 crores.
+      </p>
+      <div class="hero-cta a5">
+        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="#contact"    class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-right a6">
+      <div class="hero-card">
+        <div class="hc-glow"></div>
+        <div class="hc-badge">7Y</div>
+        <div class="hc-big">SS</div>
+        <div class="hc-info">
+          <h3>S. Soundhar</h3>
+          <p>Civil Engineer</p>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hnum">7<sup>+</sup></span>
+          <span class="hlbl">Years Exp</span>
+        </div>
+        <div class="hstat">
+          <span class="hnum">4Cr</span>
+          <span class="hlbl">Projects</span>
+        </div>
+        <div class="hstat">
+          <span class="hnum">5<sup>+</sup></span>
+          <span class="hlbl">Companies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" class="sec-alt">
+  <div class="container">
+    <p class="sec-tag rv">About Me</p>
+    <h2 class="sec-title rv">Building the <span class="accent">Future</span>,<br>One Structure at a Time</h2>
+
+    <div class="about-grid">
+      <div class="about-text rv">
+        <p>I am a dedicated Civil Engineer based in Erode, Tamil Nadu, with over 7 years of
+        hands-on experience spanning residential, commercial, government infrastructure,
+        and industrial projects.</p>
+        <blockquote>
+          "Passionate about delivering innovative and sustainable infrastructure solutions
+          while ensuring strict compliance with safety standards and regulations."
+        </blockquote>
+        <p>Currently serving as <b>Project Coordinator at SKS Builders &amp; Infrastructures</b>,
+        I have a proven track record of completing government projects worth ₹4 crores,
+        including check dams, stormwater drains, and residential buildings.</p>
+      </div>
+
+      <div class="info-grid rv">
+        <div class="info-card"><span class="ilbl">Age</span>        <span class="ival">26 Years</span></div>
+        <div class="info-card"><span class="ilbl">D.O.B</span>      <span class="ival">17 Sep 2000</span></div>
+        <div class="info-card"><span class="ilbl">Location</span>   <span class="ival">Chennimalai, Erode</span></div>
+        <div class="info-card"><span class="ilbl">Nationality</span><span class="ival">Indian</span></div>
+        <div class="info-card"><span class="ilbl">Phone</span>      <span class="ival">6382403757</span></div>
+        <div class="info-card"><span class="ilbl">Status</span>     <span class="ival">Single</span></div>
+        <div class="info-card span2">
+          <span class="ilbl">Email</span>
+          <span class="ival">soundharmi.ss.88&#64;gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="container">
+    <p class="sec-tag rv">Expertise</p>
+    <h2 class="sec-title rv">Skills &amp; <span class="accent">Competencies</span></h2>
+
+    <div class="legend rv">
+      <span class="ldot ld-g"></span><span class="ltxt">Core Technical</span>
+      <span class="ldot ld-c"></span><span class="ltxt">Construction</span>
+      <span class="ldot ld-o"></span><span class="ltxt">Soft Skills</span>
+    </div>
+
+    <div class="skills-wrap">
+      <span class="pill pg">AutoCAD</span>
+      <span class="pill pg">Site Supervision</span>
+      <span class="pill pg">Quality Control</span>
+      <span class="pill pg">Project Estimation</span>
+      <span class="pill pg">Cost Management</span>
+      <span class="pill pg">Blueprint Reading</span>
+      <span class="pill pg">Safety Compliance</span>
+      <span class="pill pg">Risk Management</span>
+      <span class="pill pc">Construction Supervision</span>
+      <span class="pill pc">Inspection Techniques</span>
+      <span class="pill pc">Contractor Management</span>
+      <span class="pill pc">Subcontractor Oversight</span>
+      <span class="pill pc">Government Infrastructure</span>
+      <span class="pill pc">Residential Projects</span>
+      <span class="pill pc">Commercial Projects</span>
+      <span class="pill pc">Roofing Installation</span>
+      <span class="pill pc">Demolition Techniques</span>
+      <span class="pill pc">Trench Planning</span>
+      <span class="pill po">Problem Solving</span>
+      <span class="pill po">Team Coordination</span>
+      <span class="pill po">Time Management</span>
+      <span class="pill po">Client Communication</span>
+      <span class="pill po">Employee Training</span>
+      <span class="pill po">Schedule Management</span>
+      <span class="pill po">Multitasking</span>
+      <span class="pill po">Project Management</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ EXPERIENCE ══════════ -->
+<section id="experience" class="sec-alt">
+  <div class="container">
+    <p class="sec-tag rv">Career Path</p>
+    <h2 class="sec-title rv">Work <span class="accent">Experience</span></h2>
+
+    <div class="timeline">
+
+      <div class="tl-item rv">
+        <div class="tl-dot"></div>
+        <p class="tl-per">APR 2025 — PRESENT</p>
+        <h3 class="tl-role">Project Coordinator</h3>
+        <p class="tl-co">SKS Builders &amp; Infrastructures · Erode, India</p>
+        <div class="tl-card">
+          <ul>
+            <li>Coordinated project schedules to ensure timely completion of building tasks.</li>
+            <li>Collaborated with team members to maintain quality and safety standards on site.</li>
+            <li>Assisted in procurement of materials and supplies for construction projects.</li>
+            <li>Read blueprints or technical diagrams to determine specific materials required for each job.</li>
+            <li>Performed daily inspections and other tasks to maintain clean and safe work environment.</li>
+            <li>Inspected foundations, walls, floors, doors, windows, roofing, and tiling to ensure code standards.</li>
+            <li>Negotiated contracts with vendors and suppliers to secure favorable terms.</li>
+            <li>Coordinated the installation of electrical and plumbing systems.</li>
+            <li>Constructed residential and commercial buildings according to project specifications.</li>
+            <li>Trained new construction workers in building practices and safety standards.</li>
+            <li>Measured, marked or recorded openings or distances to construction layout areas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-dot"></div>
+        <p class="tl-per">SEP 2022 — MAR 2025</p>
+        <h3 class="tl-role">Site Engineer</h3>
+        <p class="tl-co">NVS Infra · Perundurai, India</p>
+        <div class="tl-card">
+          <ul>
+            <li>Worked in Residential buildings, Commercial complexes, Godowns and Govt. projects worth ₹4 crores.</li>
+            <li>Coordinated with subcontractors to streamline workflow and resource allocation.</li>
+            <li>Conducted regular inspections to assess quality and progress of construction work.</li>
+            <li>Prepared detailed reports on daily activities and site conditions for stakeholders.</li>
+            <li>Mentored junior engineers in best practices for site management and safety protocols.</li>
+            <li>Coordinated with engineers, contractors, inspectors, suppliers, and owners for timely completion within budget.</li>
+            <li>Managed use of materials and equipment to prevent property loss and support availability.</li>
+            <li>Developed cost estimates for materials and labor resources required for the project.</li>
+            <li>Completed site surveys, marked locations and oversaw construction of various projects.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-dot"></div>
+        <p class="tl-per">MAY 2021 — JUN 2022</p>
+        <h3 class="tl-role">Supervisor</h3>
+        <p class="tl-co">Honey Builders</p>
+        <div class="tl-card">
+          <ul>
+            <li>Supervised residential building project worth ₹25 lakhs.</li>
+            <li>Resolved customer complaints in a timely manner while ensuring customer satisfaction.</li>
+            <li>Monitored employee productivity to provide constructive feedback and coaching.</li>
+            <li>Streamlined workflow processes, reducing project completion times.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-dot"></div>
+        <p class="tl-per">APR 2020 — MAR 2021</p>
+        <h3 class="tl-role">Supervisor</h3>
+        <p class="tl-co">GK Planners</p>
+        <div class="tl-card">
+          <ul>
+            <li>Supervised residential building project worth ₹15 lakhs.</li>
+            <li>Supervised daily operations to ensure project timelines and goals were met effectively.</li>
+            <li>Directed and supervised team of 15 employees in daily operations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item rv">
+        <div class="tl-dot"></div>
+        <p class="tl-per">APR 2019 — MAR 2020</p>
+        <h3 class="tl-role">Supervisor</h3>
+        <p class="tl-co">SK Construction</p>
+        <div class="tl-card">
+          <ul>
+            <li>Supervised residential building project worth ₹45 lakhs.</li>
+            <li>Coordinated team schedules and allocated resources for optimal workflow management.</li>
+            <li>Implemented process improvements to enhance team productivity and service delivery.</li>
+            <li>Monitored project progress and provided regular updates to senior management.</li>
+            <li>Maintained accurate records of employee performance, attendance, and leave requests.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ ACCOMPLISHMENTS ══════════ -->
+<section id="accomplishments">
+  <div class="container">
+    <p class="sec-tag rv">Highlights</p>
+    <h2 class="sec-title rv">Key <span class="accent">Accomplishments</span></h2>
+
+    <div class="acc-grid">
+      <div class="acc-card rv">
+        <div class="acc-num">01</div>
+        <p>Successfully supervised <b class="accent">government projects worth ₹4 crores</b>
+        including check dams, stormwater drains, and residential buildings.</p>
+      </div>
+      <div class="acc-card rv">
+        <div class="acc-num">02</div>
+        <p><b class="accent">Reduced project delays</b> by implementing efficient site
+        coordination and resource planning strategies across multiple projects.</p>
+      </div>
+      <div class="acc-card rv">
+        <div class="acc-num">03</div>
+        <p>Recognized for <b class="accent">delivering high-quality construction work
+        within deadlines</b> in both residential and industrial projects.</p>
+      </div>
+      <div class="acc-card rv">
+        <div class="acc-num">04</div>
+        <p>Contributed to the completion of a <b class="accent">₹1 crore industrial
+        building project</b> with Asoka Inc.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ EDUCATION ══════════ -->
+<section id="education" class="sec-alt">
+  <div class="container">
+    <p class="sec-tag rv">Academic Background</p>
+    <h2 class="sec-title rv">Education &amp; <span class="accent">Training</span></h2>
+
+    <div class="edu-grid">
+      <div class="edu-card rv">
+        <span class="edu-icon">🏛️</span>
+        <h3 class="edu-deg">B.E. Civil Engineering</h3>
+        <p class="edu-sch">Surya Engineering College</p>
+        <p class="edu-yr">Erode · Ongoing</p>
+        <span class="edu-badge">🎓 60% (upto 4th semester)</span>
+      </div>
+      <div class="edu-card rv">
+        <span class="edu-icon">📐</span>
+        <h3 class="edu-deg">Diploma</h3>
+        <p class="edu-sch">Kongu Polytechnic</p>
+        <p class="edu-yr">Perundurai · Jan 2019</p>
+        <span class="edu-badge">🎓 GPA: 70%</span>
+      </div>
+      <div class="edu-card rv">
+        <span class="edu-icon">📚</span>
+        <h3 class="edu-deg">SSLC</h3>
+        <p class="edu-sch">Govt Boys Hr Sec School</p>
+        <p class="edu-yr">Perundurai · Jan 2016</p>
+        <span class="edu-badge">🎓 GPA: 84%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container">
+    <p class="sec-tag rv">Get In Touch</p>
+    <h2 class="sec-title rv">Let's <span class="accent">Connect</span></h2>
+
+    <div class="contact-grid">
+      <div class="contact-left rv">
+        <div class="c-item">
+          <div class="c-icon">📍</div>
+          <div>
+            <p class="clbl">Location</p>
+            <p class="cval">Chennimalai, Erode 638051, Tamil Nadu</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">📞</div>
+          <div>
+            <p class="clbl">Phone</p>
+            <p class="cval">+91 6382403757</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">✉️</div>
+          <div>
+            <p class="clbl">Email</p>
+            <p class="cval">soundharmi.ss.88&#64;gmail.com</p>
+          </div>
+        </div>
+        <div class="decl-box">
+          <p class="clbl" style="margin-bottom:12px">Declaration</p>
+          <p class="decl-txt">"I hereby declare that the above particulars are true to the best of my knowledge and belief."</p>
+          <p class="decl-sig">— S. Soundhar</p>
+        </div>
+      </div>
+
+      <div class="contact-right rv" id="ss_lang">
+        <p class="sec-tag" style="margin-bottom:26px">Languages</p>
+        <div class="lang-item">
+          <div class="lhdr">
+            <span class="lname">Tamil</span>
+            <span class="llvl">Native / First Language</span>
+          </div>
+          <div class="lbar"><div class="lfill" data-pct="100"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lhdr">
+            <span class="lname">English</span>
+            <span class="llvl">B1 · Intermediate</span>
+          </div>
+          <div class="lbar"><div class="lfill" data-pct="60"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lhdr">
+            <span class="lname">Hindi</span>
+            <span class="llvl">A2 · Elementary</span>
+          </div>
+          <div class="lbar"><div class="lfill" data-pct="30"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div>
+    <p class="foot-name">S. Soundhar</p>
+    <p class="foot-sub">Civil Engineer · Project Coordinator</p>
+  </div>
+  <p class="foot-loc">Chennimalai, Erode 638051 · Tamil Nadu</p>
+  <p class="foot-copy">Portfolio © 2025</p>
+</footer>
